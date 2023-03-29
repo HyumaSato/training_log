@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Log;
+use Illuminate\Support\Facades\Auth;
 
 class LogController extends Controller
 {
@@ -26,8 +27,9 @@ public function create()
   public function store(Request $request, Log $log)
 {
     $input = $request['log'];
+    $input['user_id']=Auth::id();
     $log->fill($input)->save();
-    return redirect('/logs/' . $log->id);
+    return redirect('/log/' . $log->id);
 }
     
 }

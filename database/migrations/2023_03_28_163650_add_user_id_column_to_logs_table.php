@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('logs', function (Blueprint $table) {
-           
-            $table->unsignedBigInteger('user_id'); //
+            $table->foreignId('user_id')->constrained();   
+            
         });
     }
 

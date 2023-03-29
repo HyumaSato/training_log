@@ -10,11 +10,15 @@ class Log extends Model
     use HasFactory;
     
     protected $fillable = [
-    'date',
-    'training',
-    'meal',
-    'memo'
-];
-
+        'date',
+        'training',
+        'meal',
+        'memo',
+        'user_id'
+    ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
     
 }

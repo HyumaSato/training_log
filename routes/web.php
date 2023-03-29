@@ -24,13 +24,13 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/log', [LogController::class, 'index'])->name('log');
+    Route::get('/log/create', [LogController::class, 'create']);
+    Route::get('/log/{log}', [LogController::class ,'show']);
+    Route::post('/log', [LogController::class, 'store']);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-Route::get('/log', [LogController::class, 'index']);
-Route::get('/log/create', [LogController::class, 'create']);
-Route::get('/log/{log}', [LogController::class ,'show']);
-Route::post('/log', [LogController::class, 'store']);
 
 require __DIR__.'/auth.php';
