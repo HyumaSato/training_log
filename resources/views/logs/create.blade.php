@@ -5,7 +5,7 @@
         <title>Blog</title>
     </head>
     <body>
-        <h1>Blog Name</h1>
+        <h1>頑張りの記録</h1>
         <form action="/log" method="POST">
             @csrf
             <div class="date">

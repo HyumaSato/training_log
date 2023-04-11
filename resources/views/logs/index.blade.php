@@ -11,9 +11,10 @@
              <h2 class='date'>
                  <a href="/log/{{ $log->id }}">{{ $log->date }}</a>
             </h2>
-                <a class='text-2xl' href='/log/create'>create</a>
+               
         </div>
     @endforeach
+     <a class='text-2xl' href='/log/create'>create</a>
     </div>
 </x-app-layout>
         
