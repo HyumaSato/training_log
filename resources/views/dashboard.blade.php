@@ -18,7 +18,7 @@
                     <div class="p-6 text-gray-900">
                         {{ __("料理") }}   
                         <div class="p-6 text-blue"> <a href="/foods">・オススメ食材</a></div>
-                        <div class="p-6 text-blue"> <a href="/meals"></a>・簡単な料理</div>
+                        <div class="p-6 text-blue"> <a href="/meals">・簡単な料理</a></div>
                     </div>
                 </div>
             <divclass="bg-white w-max h-max-w-fit overflow-hidden shadow-sm sm:rounded-lg">
