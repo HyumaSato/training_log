@@ -14,7 +14,7 @@
                         <div class="p-6 text-blue"> <a href="/jouhanshin">・腕・肩・胸</a></div>
                         <div class="p-6 text-blue"> <a href="/abs">・腹筋</a></div>
                         <div class="p-6 text-blue"> <a href="/back_training">・背中</a></div>
-                        <div class="p-6 text-blue"> <a href="/leg"></a>・脚</div>
+                        <div class="p-6 text-blue"> <a href="/leg">・脚</a></div>
                     <div class="p-6 text-gray-900">
                         {{ __("料理") }}   
                         <div class="p-6 text-blue"> <a href="/foods">・オススメ食材</a></div>
